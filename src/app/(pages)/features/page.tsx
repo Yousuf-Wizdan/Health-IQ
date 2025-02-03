@@ -116,7 +116,7 @@ export default function AllFeaturesPage() {
 
         <div className="mt-12 text-center">
           <Button size="lg" asChild>
-            <Link href="/signup">
+            <Link href="/register">
               Get Started with Health-IQ
               <ChevronRight className="ml-2 h-4 w-4" />
             </Link>

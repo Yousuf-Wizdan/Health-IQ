@@ -144,7 +144,7 @@ export default function DashboardPage() {
           <DashboardQuickAccessCard
             title="Emergency Services"
             icon={<Truck className="h-6 w-6" />}
-            link="/emergency-medicine"
+            link="/emergency-med"
           />
           <DashboardQuickAccessCard title="Community" icon={<Users className="h-6 w-6" />} link="/community" />
           <DashboardQuickAccessCard
