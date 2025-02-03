@@ -49,7 +49,7 @@ export default function DashboardPage() {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <FootprintsIcon className="h-6 w-6 mr-2" />
-                Today's Steps
+                Today&apos;s Steps
               </CardTitle>
             </CardHeader>
             <CardContent>
