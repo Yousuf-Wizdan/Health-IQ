@@ -1,10 +1,9 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
-import { Badge } from "@/components/ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsContent } from "@/components/ui/tabs"
 import { Award, Gift, TrendingUp, Zap, ShoppingBag, Heart, Book, Leaf } from "lucide-react"
+import { ReactElement } from "react"
 
 export default function RewardsPage() {
   return (
@@ -148,7 +147,7 @@ export default function RewardsPage() {
   )
 }
 
-function RedeemOption({ title, points, icon }: any) {
+function RedeemOption({ title, points, icon }: {title:string , points: number , icon: ReactElement}) {
   return (
     <div className="flex items-center justify-between">
       <div className="flex items-center">
@@ -159,23 +158,3 @@ function RedeemOption({ title, points, icon }: any) {
     </div>
   )
 }
-
-function TierLevel({ title, points, maxPoints, benefits }: any) {
-  return (
-    <div className="space-y-2">
-      <div className="flex items-center justify-between">
-        <h3 className="font-semibold">{title}</h3>
-        <Badge variant="secondary">
-          {points} / {maxPoints} points
-        </Badge>
-      </div>
-      <Progress value={(points / maxPoints) * 100} />
-      <ul className="list-disc list-inside text-sm text-gray-600">
-        {benefits.map((benefit: any, index: any) => (
-          <li key={index}>{benefit}</li>
-        ))}
-      </ul>
-    </div>
-  )
-}
-

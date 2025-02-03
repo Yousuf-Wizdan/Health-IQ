@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import {HeartPulseIcon as Heartbeat , Globe, ChevronDown} from 'lucide-react'
-import Link from "next/link";
-import { Button } from "@/components/ui/button"
 
 
 const geistSans = Geist({

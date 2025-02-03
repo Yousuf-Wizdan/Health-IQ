@@ -7,7 +7,7 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = (e: any) => {
+  const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle login logic
     console.log('Logged in:', { email, password });
@@ -19,7 +19,7 @@ const Login = () => {
       <h2 className="text-xl font-semibold text-blue-600 mb-4">Login to Your Account</h2>
       <form onSubmit={handleLogin} className="space-y-4">
         <Input
-        //   label="Email"
+          // label="Email"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}

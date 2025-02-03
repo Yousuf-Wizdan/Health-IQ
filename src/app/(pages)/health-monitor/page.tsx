@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Calendar } from "@/components/ui/calendar"
 import { FootprintsIcon, Pill, Stethoscope, Heart, Droplet, Moon, Scale, Activity } from "lucide-react"
+import { ReactElement } from "react"
 
 export default function HealthMonitoringPage() {
   return (
@@ -170,7 +171,7 @@ export default function HealthMonitoringPage() {
   )
 }
 
-function HealthMetricCard({ title, value, icon, progress, goal, status }: any) {
+function HealthMetricCard({ title, value, icon, progress, goal, status }: {title: string , value:string , icon: ReactElement , progress?: number , goal?: string , status?: string}) {
   return (
     <Card>
       <CardHeader>
@@ -197,7 +198,7 @@ function HealthMetricCard({ title, value, icon, progress, goal, status }: any) {
   )
 }
 
-function MedicationReminder({ name, dosage, time, taken }: any) {
+function MedicationReminder({ name, dosage, time, taken }: {name: string , dosage: string , time: string , taken: boolean}) {
   return (
     <div className="flex items-center justify-between p-4 border rounded-lg">
       <div className="flex items-center">
@@ -214,7 +215,7 @@ function MedicationReminder({ name, dosage, time, taken }: any) {
   )
 }
 
-function CheckupReminder({ doctor, specialty, date, time }: any) {
+function CheckupReminder({ doctor, specialty, date, time }: {doctor: string , specialty: string , date: string , time: string}) {
   return (
     <div className="flex items-center justify-between p-4 border rounded-lg mb-4">
       <div className="flex items-center">

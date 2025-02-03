@@ -10,6 +10,7 @@ import {
   Globe,
   ChevronDown
 } from "lucide-react"
+import { ReactElement } from "react"
 
 export default function Home() {
   return (
@@ -215,7 +216,7 @@ export default function Home() {
   )
 }
 
-function FeatureCard({ icon, title, description }: any) {
+function FeatureCard({ icon, title, description}: {icon: ReactElement , title: string , description: string}) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md text-center">
       <div className="mb-4">{icon}</div>
@@ -225,7 +226,7 @@ function FeatureCard({ icon, title, description }: any) {
   )
 }
 
-function SchemeCard({ title, description }: any) {
+function SchemeCard({ title, description }: {title: string, description: string}) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md">
       <h3 className="text-xl font-semibold mb-2">{title}</h3>

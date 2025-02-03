@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { ShoppingCart, Search } from "lucide-react"
+import {  Search } from "lucide-react"
 
 const products = [
   { id: 1, name: "Paracetamol", price: 5.99, category: "Pain Relief", image: "/placeholder.svg" },

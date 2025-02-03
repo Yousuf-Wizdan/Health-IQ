@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Users, Heart, Stethoscope, Baby, Pill, Search } from "lucide-react"
+import { ReactElement } from "react"
 
 export default function GovernmentSchemesPage() {
   return (
@@ -114,7 +115,7 @@ export default function GovernmentSchemesPage() {
   )
 }
 
-function SchemeCard({ icon, title, description, eligibility, benefits }: any) {
+function SchemeCard({ icon, title, description, eligibility, benefits }: {icon: ReactElement , title: string , description: string , eligibility: string , benefits: string[]}) {
   return (
     <Card>
       <CardHeader>

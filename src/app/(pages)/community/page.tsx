@@ -4,6 +4,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Input } from "@/components/ui/input"
 import { BookOpen, Video, Users, MessageSquare, Calendar, ArrowRight } from "lucide-react"
+import { ReactElement } from "react"
 
 export default function CommunityPage() {
   return (
@@ -161,7 +162,7 @@ function ForumsTab() {
   )
 }
 
-function ResourceCard({ icon, title, description, link }: any) {
+function ResourceCard({ icon, title, description, link }: {icon: ReactElement, title: string , description: string , link: string}) {
   return (
     <Card>
       <CardHeader>
@@ -182,7 +183,7 @@ function ResourceCard({ icon, title, description, link }: any) {
   )
 }
 
-function WebinarCard({ title, date, speaker, description }: any) {
+function WebinarCard({ title, date, speaker, description }: {title: string , date: string , speaker: string , description: string}) {
   return (
     <Card>
       <CardHeader>
@@ -202,7 +203,7 @@ function WebinarCard({ title, date, speaker, description }: any) {
   )
 }
 
-function ArticleCard({ title, author, date, excerpt }: any) {
+function ArticleCard({ title, author, date, excerpt }: {title: string , author: string , date: string , excerpt: string}) {
   return (
     <Card>
       <CardHeader>
@@ -221,7 +222,7 @@ function ArticleCard({ title, author, date, excerpt }: any) {
   )
 }
 
-function ForumCard({ title, lastPost, posts, members }: any) {
+function ForumCard({ title, lastPost, posts, members }: {title: string , lastPost: string , posts: number , members: number}) {
   return (
     <Card>
       <CardHeader>

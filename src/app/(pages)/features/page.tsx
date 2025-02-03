@@ -14,10 +14,10 @@ import {
   ShoppingCart,
   HeartPulse,
   Pill,
-  Smartphone,
   Users,
   ChevronRight,
 } from "lucide-react"
+import { ReactElement } from "react"
 
 export default function AllFeaturesPage() {
   return (
@@ -144,7 +144,7 @@ export default function AllFeaturesPage() {
   )
 }
 
-function FeatureCard({ icon, title, description }: any) {
+function FeatureCard({ icon, title, description }: {icon: ReactElement , title: string , description: string}) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
       <div className="flex items-center mb-4">

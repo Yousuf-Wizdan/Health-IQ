@@ -8,7 +8,7 @@ const Register = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleRegister = (e: any) => {
+  const handleRegister = (e:  React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle registration logic
     console.log('Registered:', { email, password, confirmPassword });

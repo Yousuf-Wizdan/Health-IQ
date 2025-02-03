@@ -15,6 +15,7 @@ import {
   Stethoscope,
   Settings,
 } from "lucide-react"
+import { ReactElement } from "react"
 
 export default function DashboardPage() {
   return (
@@ -175,7 +176,7 @@ export default function DashboardPage() {
   )
 }
 
-function DashboardQuickAccessCard({ title, icon, link }: any) {
+function DashboardQuickAccessCard({ title, icon, link }: {title: string , icon: ReactElement , link: string}) {
   return (
     <Card>
       <CardHeader>
