@@ -1,14 +1,12 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Users, Heart, Stethoscope, Baby, Pill, Search } from "lucide-react"
+import { Users, Heart, Stethoscope, Baby, Pill} from "lucide-react"
 import { ReactElement } from "react"
 
 export default function GovernmentSchemesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-
       <main className="container mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold text-center mb-4">Government Healthcare Schemes</h1>
         <p className="text-xl text-center text-gray-600 mb-12">
@@ -134,7 +132,7 @@ function SchemeCard({ icon, title, description, eligibility, benefits }: {icon: 
           <div>
             <Badge variant="secondary">Key Benefits</Badge>
             <ul className="mt-1 list-disc list-inside text-sm">
-              {benefits.map((benefit: any, index: any) => (
+              {benefits.map((benefit: string, index: number) => (
                 <li key={index}>{benefit}</li>
               ))}
             </ul>
