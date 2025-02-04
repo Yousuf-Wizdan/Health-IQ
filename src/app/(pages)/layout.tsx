@@ -1,6 +1,7 @@
-import {HeartPulseIcon as Heartbeat , Globe, ChevronDown} from 'lucide-react'
+import {HeartPulseIcon as Heartbeat , Globe, ChevronDown, Menu} from 'lucide-react'
 import Link from "next/link";
 import { Button } from "@/components/ui/button"
+import { Header } from '@/components/Header';
 
 const Layout = ({children}: {
     children: React.ReactNode
@@ -41,12 +42,14 @@ const Layout = ({children}: {
               Health-Monitor
             </Link>
           </nav>
+          
           <div className="flex items-center space-x-2">
-            <Button variant="outline" size="sm">
+            {/* <Button variant="outline" size="sm">
               <Globe className="h-4 w-4 mr-2" />
               EN
               <ChevronDown className="h-4 w-4 ml-1" />
-            </Button>
+            </Button> */}
+            <Header />
             <Link href={'/register'}>
               <Button>Register</Button>
             </Link>

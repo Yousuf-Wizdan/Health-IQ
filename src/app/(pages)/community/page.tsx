@@ -21,7 +21,7 @@ export default function CommunityPage() {
             <TabsTrigger value="resources">Resources</TabsTrigger>
             <TabsTrigger value="webinars">Webinars</TabsTrigger>
             <TabsTrigger value="articles">Expert Articles</TabsTrigger>
-            <TabsTrigger value="forums">Community Forums</TabsTrigger>
+            <TabsTrigger value="forums">Forums</TabsTrigger>
           </TabsList>
           <TabsContent value="resources">
             <ResourcesTab />

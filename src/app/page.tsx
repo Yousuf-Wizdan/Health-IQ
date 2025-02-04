@@ -7,10 +7,10 @@ import {
   GraduationCap,
   Truck,
   Award,
-  Globe,
-  ChevronDown
 } from "lucide-react"
 import { ReactElement } from "react"
+import { Header } from "@/components/Header"
+
 
 export default function Home() {
   return (
@@ -50,11 +50,12 @@ export default function Home() {
             </Link>
           </nav>
           <div className="flex items-center space-x-2">
-            <Button variant="outline" size="sm">
+            {/* <Button variant="outline" size="sm">
               <Globe className="h-4 w-4 mr-2" />
               EN
               <ChevronDown className="h-4 w-4 ml-1" />
-            </Button>
+            </Button> */}
+            <Header />
             <Link href={'/register'}>
               <Button>Register</Button>
             </Link>
