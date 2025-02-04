@@ -1,4 +1,4 @@
-import {HeartPulseIcon as Heartbeat , Globe, ChevronDown, Menu} from 'lucide-react'
+import {HeartPulseIcon as Heartbeat} from 'lucide-react'
 import Link from "next/link";
 import { Button } from "@/components/ui/button"
 import { Header } from '@/components/Header';
