@@ -35,7 +35,7 @@ export const Header = () => {
                   <Link href="/shop" className="text-lg font-medium" onClick={() => setIsMenuOpen(false)}>
                     Shop Medicines
                   </Link>
-                  <Link href="/emergency-medicine" className="text-lg font-medium" onClick={() => setIsMenuOpen(false)}>
+                  <Link href="/emergency-med" className="text-lg font-medium" onClick={() => setIsMenuOpen(false)}>
                     Emergency Services
                   </Link>
                   <Link href="/community" className="text-lg font-medium" onClick={() => setIsMenuOpen(false)}>
